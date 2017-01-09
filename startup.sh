@@ -29,9 +29,9 @@ fi
 
 if [ ! -z "$NGROK" ] ; then
     su ubuntu -c "$HOME/ngrok/ngrok http 6080 --log $HOME/ngrok/ngrok.log --log-format json" &
-    sleep 2
+    sleep 5
     NGROK_URL=`curl -s http://127.0.0.1:4040/status | grep -P "http://.*?ngrok.io" -oh`
-    su ubuntu -c "echo -e 'Ngrok URL = $NGROK_URL/vnc.html' >> $HOME/ngrok/Ngrok_URL.txt"
+    su ubuntu -c "echo -e 'Ngrok URL = $NGROK_URL/vnc.html' > $HOME/ngrok/Ngrok_URL.txt"
 fi
 
 /usr/bin/supervisord -n
