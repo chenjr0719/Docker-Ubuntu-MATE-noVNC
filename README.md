@@ -88,3 +88,12 @@ This image contains 3 input argument:
 
     **Caution!!** this may also cause security issues, use it carefully.
 
+## Screen size
+
+The default setting of screen siz is 1600x900.
+
+You can change screen by using following command, this will change screen size to 1024x768:
+
+```
+sudo docker exec $CONTAINER_ID sed -i "s|-geometry 1600x900|-geometry 1024x768|g" /etc/supervisor/conf.d/supervisor.conf
+sudo docker restart $CONTAINER_ID
