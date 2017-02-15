@@ -31,7 +31,7 @@ else
 fi
 
 if [ ! -z "$NGROK" ] ; then
-        case "$SUDO" in
+        case "$NGROK" in
             [yY]|[yY][eE][sS])
                 su ubuntu -c "$HOME/ngrok/ngrok http 6080 --log $HOME/ngrok/ngrok.log --log-format json" &
                 sleep 5

@@ -76,7 +76,7 @@ This image contains 3 input argument:
 
    ![alt text](https://github.com/chenjr0719/Docker-Ubuntu-MATE-noVNC/raw/master/sudo.png "sudo")
 
-   **Caution!!** allow your user as suder may cause security issues, use it carefully.
+   **Caution!!** allow your user as sudoer may cause security issues, use it carefully.
 
 3. Ngrok
 
