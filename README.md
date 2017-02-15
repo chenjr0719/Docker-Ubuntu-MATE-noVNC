@@ -25,9 +25,12 @@ The default usage of this image is:
 sudo docker run -itd -p 80:6080 chenjr0719/ubuntu-mate-novnc
 ```
 
-Wait for a few second, you can access http://localhost/vnc.html and see this screen:
+Wait for a few second, you can access [http://localhost/vnc.html](http://localhost/vnc.html) and see this screen:
 
 ![alt text](https://github.com/chenjr0719/Docker-Ubuntu-MATE-noVNC/raw/master/noVNC.png "vnc.html")
+
+
+### Password
 
 In default, the **password** will create randomly, to find the password, please using the following command:
 
@@ -40,6 +43,7 @@ And you can use this password to log in into this container.
 After log in, you can see this screen:
 
 ![alt text](https://github.com/chenjr0719/Docker-Ubuntu-MATE-noVNC/raw/master/desktop.png "MATE desktop")
+
 
 ## Arguments
 
@@ -64,6 +68,14 @@ This image contains 3 input argument:
 
    And use **SUDO=YES**, **SUDO=Yes**, **SUDO=Y**, **SUDO=y** are also supported.
 
+   To check the sudo is work , when you open **MATE Terminal** it should show following message:
+   ```
+   To run a command as administrator (user "root"), use "sudo <command>".
+   See "man sudo_root" for details.
+   ```
+
+   ![alt text](https://github.com/chenjr0719/Docker-Ubuntu-MATE-noVNC/raw/master/sudo.png "sudo")
+
    **Caution!!** allow your user as suder may cause security issues, use it carefully.
 
 3. Ngrok
@@ -87,6 +99,7 @@ This image contains 3 input argument:
    **NGROK=YES**, **NGROK=Yes**, **NGROK=Y**, **NGROK=y** are also supported.
 
     **Caution!!** this may also cause security issues, use it carefully.
+
 
 ## Screen size
 
